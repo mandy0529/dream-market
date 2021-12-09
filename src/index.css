@@ -5,37 +5,19 @@ Variables
 */
 
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(22, 28%, 21%);
-  --clr-primary-2: hsl(22, 28%, 29%);
-  --clr-primary-3: hsl(22, 28%, 37%);
-  --clr-primary-4: hsl(22, 28%, 45%);
-  /* primary/main color */
-  --clr-primary-5: hsl(22, 31%, 52%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(22, 31%, 60%);
-  --clr-primary-7: hsl(22, 31%, 67%);
-  --clr-primary-8: hsl(20, 31%, 74%);
-  --clr-primary-9: hsl(22, 31%, 81%);
-  --clr-primary-10: hsl(22, 31%, 88%);
-  /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
+  --main-grey: #eae4e9;
+  --main-light-yellow: #fff1e6;
+  --main-yellow: #f0efeb;
+  --main-light-pink: #fde2e4;
+  --main-pink: #fad2e1;
+  --main-light-green: #e2ece9;
+  --main-green: #bee1e6;
+  --main-light-blue: #dfe7fd;
+  --main-blue: #cddafd;
+
+  --main-black: #222;
+  --main-white: #fff;
+
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -53,27 +35,27 @@ Global Styles
 *,
 ::after,
 ::before {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: whitesmoke;
-  color: var(--clr-grey-1);
+  background: var(--main-light-blue);
+  color: var(--main-black);
   line-height: 1.5;
   font-size: 0.875rem;
+  cursor: default;
 }
-ul {
-  list-style-type: none;
-}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 hr {
   border: none;
-  border-top: 1px solid var(--clr-grey-8);
+  border-top: 1px solid var(--main-black);
 }
 h1,
 h2,
@@ -102,7 +84,13 @@ h5 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-3);
+  color: var(--main-black);
+}
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 @media screen and (max-width: 786px) {
   h1 {
