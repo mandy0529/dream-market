@@ -15,7 +15,7 @@ function Navbar() {
     <Wrapper>
       <div className="header__logo">
         <img src={HEADER} alt="header-logo" />
-        <Link to="/">
+        <Link className="nav-header" to="/">
           <span>dream market</span>
         </Link>
       </div>

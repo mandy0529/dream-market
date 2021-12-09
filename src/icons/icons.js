@@ -1,3 +1,4 @@
 import {VscThreeBars} from 'react-icons/vsc';
 import {FaTimes} from 'react-icons/fa';
-export {VscThreeBars, FaTimes};
+import {BiMoon} from 'react-icons/bi';
+export {VscThreeBars, FaTimes, BiMoon};

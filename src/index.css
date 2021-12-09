@@ -35,7 +35,6 @@ Global Styles
 *,
 ::after,
 ::before {
-  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -47,6 +46,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   cursor: default;
+  margin: 0 auto;
 }
 
 a {

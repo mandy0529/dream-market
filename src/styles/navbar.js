@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 1rem;
   img {
@@ -13,17 +13,18 @@ const Wrapper = styled.div`
   .header__list,
   .header__logo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    span {
+    .nav-header {
       font-size: 2rem;
       font-size: bold;
       font-family: 'Luckiest Guy', cursive;
       padding-left: 1rem;
-      cursor: pointer;
       transition: var(--transition);
-      &:hover {
-        transform: rotate(3deg);
-      }
+      cursor: pointer;
+    }
+    .nav-header:hover {
+      transform: rotate(-3deg);
     }
     li {
       margin: 0 1rem;
@@ -51,7 +52,7 @@ const Wrapper = styled.div`
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        transform: rotate(8deg);
+        transform: rotate(-8deg);
       }
     }
 
@@ -82,12 +83,15 @@ const Wrapper = styled.div`
   }
   @media screen and (max-width: 981px) {
     grid-template-columns: 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
     img {
       height: 60px;
       margin-left: 2rem;
     }
     .header__logo {
-      margin-left: auto;
+      margin-right: auto;
+
       span {
         font-size: 1.2rem;
       }
