@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     transition: var(--transition);
     &:hover {
       background: var(--main-pink);
-      border: 3px solid transparent;
+      border: 3px solid var(--main-light-blue);
       color: white;
     }
   }

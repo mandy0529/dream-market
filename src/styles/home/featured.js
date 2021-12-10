@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  width: 100%;
   display: flex;
   flex-direction: column;
   background: var(--main-yellow);
-  padding: 8rem 15rem;
+  padding: 8rem 18rem;
   text-align: center;
+
   .featured__flex {
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ const Wrapper = styled.section`
     background: var(--main-blue);
     color: white;
     border-radius: 10px;
-    padding: 0.3rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
     transition: var(--transition);

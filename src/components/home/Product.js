@@ -1,7 +1,7 @@
 import React from 'react';
 import {FaSearch} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
-import {Wrapper} from '../../styles/product';
+import {Wrapper} from '../../styles/home/product';
 
 const Product = ({id, name, url, path, content}) => {
   return (

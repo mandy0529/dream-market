@@ -9,6 +9,8 @@ const FEATURED1 = 'assets/featured1.jpeg';
 const FEATURED2 = 'assets/featured2.jpeg';
 const FEATURED3 = 'assets/featured3.jpeg';
 
+const ABOUT = 'assets/about.png';
+const MOBILE = 'assets/mobile-about.png';
 export {
   HEADER,
   HERO_IMG1,
@@ -19,4 +21,6 @@ export {
   FEATURED1,
   FEATURED2,
   FEATURED3,
+  ABOUT,
+  MOBILE,
 };

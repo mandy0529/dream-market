@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Wrapper} from '../../styles/hero';
+import {Wrapper} from '../../styles/home/hero';
 import {HERO_IMG1, HERO_IMG2, HERO_IMG5} from '../../utils/images';
 
 function Hero() {

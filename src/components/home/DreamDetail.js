@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper} from '../../styles/dreamDetail';
+import {Wrapper} from '../../styles/home/dreamDetail';
 import {dreamList} from '../../utils/helper';
 
 function DreamDetail() {

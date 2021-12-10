@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Product} from '..';
 import {BiMoon} from '../../icons/icons';
-import {Wrapper} from '../../styles/featured';
+import {Wrapper} from '../../styles/home/featured';
 import {featuredList} from '../../utils/helper';
 
 function FeaturedProducts() {
