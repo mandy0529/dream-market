@@ -15,35 +15,34 @@ const Wrapper = styled.article`
     transition: var(--transition);
     cursor: pointer;
   }
-  .link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--clr-primary-5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    transition: var(--transition);
-    opacity: 0;
 
-    .search__btn {
-      font-size: 1.8rem;
-      color: white;
-    }
-  }
   .container:hover img {
-    opacity: 0.5;
+    opacity: 0.8;
+    transform: scale(0.98);
   }
   .container:hover .link {
     opacity: 1;
   }
   footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.4rem;
     margin: 1rem 0;
+    h5 {
+      margin: 0 2rem;
+    }
+    p {
+      opacity: 0.6;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    footer {
+      h5 {
+        margin: 0 1rem;
+        margin-right: 2rem;
+      }
+    }
   }
 `;
 

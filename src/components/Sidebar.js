@@ -7,7 +7,7 @@ import {headerList} from '../utils/helper';
 
 function Sidebar() {
   const {hideSidebar, isOpen} = useGlobalContext();
-  console.log(isOpen, 'isopen');
+
   return (
     <SidebarContainer className={`sidebar ${isOpen ? 'show' : ''}`}>
       <ul className="links">

@@ -1,18 +1,18 @@
 import React from 'react';
-import {FaSearch} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import {Wrapper} from '../../styles/home/product';
+import {HERO_IMG1} from '../../utils/images';
 
 const Product = ({id, name, url, path, content}) => {
   return (
     <Wrapper>
-      <div className="container">
-        <img src={url} alt={name} />
-        <Link to={`/products/${id}`} className="link">
-          <FaSearch className="search__btn" />
-        </Link>
-      </div>
-      <footer>{content}</footer>
+      <Link to={`/products/${id}`} className="container">
+        <img src={HERO_IMG1} alt="minji" />
+      </Link>
+      <footer>
+        <h5>여행꿈</h5>
+        <p>20,000원</p>
+      </footer>
     </Wrapper>
   );
 };

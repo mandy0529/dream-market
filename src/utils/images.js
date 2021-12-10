@@ -11,6 +11,7 @@ const FEATURED3 = 'assets/featured3.jpeg';
 
 const ABOUT = 'assets/about.png';
 const MOBILE = 'assets/mobile-about.png';
+
 export {
   HEADER,
   HERO_IMG1,

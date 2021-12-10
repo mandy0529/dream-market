@@ -81,4 +81,42 @@ const dreamList = [
     icon: <RiGhost2Line />,
   },
 ];
-export {headerList, featuredList, dreamList};
+
+const productsList = [
+  {
+    id: 1,
+    category: '여행',
+    stock: 3,
+    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
+    img: 'assets/hero5.jpeg',
+  },
+  {
+    id: 2,
+    category: '초현실',
+    stock: 5,
+    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
+    img: 'assets/hero5.jpeg',
+  },
+  {
+    id: 3,
+    category: '그리움',
+    stock: 8,
+    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
+    img: 'assets/hero5.jpeg',
+  },
+  {
+    id: 4,
+    category: '사랑',
+    stock: 10,
+    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
+    img: 'assets/hero5.jpeg',
+  },
+  {
+    id: 5,
+    category: '스릴',
+    stock: 2,
+    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
+    img: 'assets/hero5.jpeg',
+  },
+];
+export {headerList, featuredList, dreamList, productsList};
