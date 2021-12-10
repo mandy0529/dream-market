@@ -5,14 +5,14 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   background: var(--main-yellow);
-  padding: 5rem 15rem;
+  padding: 8rem 15rem;
   text-align: center;
   .featured__flex {
     display: flex;
     align-items: center;
     justify-content: center;
     span {
-      font-size: 4rem;
+      font-size: 2.7rem;
       margin: 0 1rem;
     }
     h1 {

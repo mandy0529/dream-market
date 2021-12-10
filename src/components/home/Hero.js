@@ -8,12 +8,12 @@ function Hero() {
     <Wrapper>
       <div className="hero__main">
         <h1>
-          내가 선택한 꿈은
-          <br /> 품절 입니다
+          주문하신 꿈은
+          <br /> 매진입니다
         </h1>
         <p>내가 원하는 꿈을 사서 행복한 잠을 누려보세요.</p>
         <Link className="hero__btn" to="/products">
-          <span>shop now</span>
+          <span>꿈 스토어</span>
         </Link>
       </div>
       <article className="img-container">

@@ -45,8 +45,7 @@ const Wrapper = styled.div`
   .header__cart {
     display: flex;
     align-items: center;
-    font-size: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     position: relative;
     .cart-icon {
       transition: var(--transition);
@@ -67,9 +66,6 @@ const Wrapper = styled.div`
       text-align: center;
       background: var(--main-light-pink);
       border-radius: 50%;
-    }
-    span {
-      margin: 0 0.4rem;
     }
   }
   .toggle__bar {

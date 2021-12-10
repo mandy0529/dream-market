@@ -32,7 +32,6 @@ function Navbar() {
       </div>
 
       <Link to="/cart" className="header__cart">
-        <span>cart</span>
         <span className="cart-icon">
           <FiShoppingCart />
           <span className="header__cart-count">1</span>

@@ -23,7 +23,7 @@ function FeaturedProducts() {
         </div>
       </div>
       <Link to="/products" className="btn">
-        All Products
+        꿈 찾으러 가기
       </Link>
     </Wrapper>
   );

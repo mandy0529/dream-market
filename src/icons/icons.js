@@ -1,4 +1,17 @@
 import {VscThreeBars} from 'react-icons/vsc';
 import {FaTimes} from 'react-icons/fa';
 import {BiMoon} from 'react-icons/bi';
-export {VscThreeBars, FaTimes, BiMoon};
+import {MdOutlineCardTravel, MdOutlineFamilyRestroom} from 'react-icons/md';
+import {SiSkyliner} from 'react-icons/si';
+import {RiGhost2Line, RiHeart2Line} from 'react-icons/ri';
+
+export {
+  VscThreeBars,
+  FaTimes,
+  BiMoon,
+  MdOutlineCardTravel,
+  SiSkyliner,
+  MdOutlineFamilyRestroom,
+  RiHeart2Line,
+  RiGhost2Line,
+};

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
   img {
     box-shadow: 0px 1px 18px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 1px 18px 1px rgba(0, 0, 0, 0.75);
@@ -59,6 +59,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 991px) {
     flex-direction: column;
     text-align: center;
+    padding-bottom: 6rem;
     h1 {
       margin: 2rem 0;
     }
