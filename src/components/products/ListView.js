@@ -1,24 +1,34 @@
 import React from 'react';
+import {BiMoon} from 'react-icons/bi';
 import {Link} from 'react-router-dom';
 import {Wrapper} from '../../styles/pages/products/listView';
-import {HERO_IMG1} from '../../utils/images';
+import {formatPrice} from '../../utils/helper';
 
 function ListView({products}) {
   return (
     <Wrapper>
-      <img src={HERO_IMG1} alt="minji" />
-      <div>
-        <h4>여행 꿈</h4>
-        <h5 className="price">10,000원</h5>
-        <p className="list-p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-          veritatis facere, similique enim autem itaque iure quam vel voluptas
-          nisi.{' '}
-        </p>
-        <Link to="/products/id" className="detail-btn">
-          꿈 자세히 보기
-        </Link>
-      </div>
+      {products &&
+        products.map((item) => {
+          const {title, id, price, category, img, description} = item;
+          const image = img[0].url;
+          return (
+            <article key={id}>
+              <img src={image} alt={title} />
+              <div>
+                <h4>{title}</h4>
+                <span>
+                  <BiMoon />
+                  {category}
+                </span>
+                <h5 className="price">{formatPrice(price)}</h5>
+                <p className="list-p">{description.substring(0, 70)} ... </p>
+                <Link to={`/products/${id}`} className="detail-btn">
+                  details
+                </Link>
+              </div>
+            </article>
+          );
+        })}
     </Wrapper>
   );
 }

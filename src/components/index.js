@@ -12,6 +12,12 @@ import ListView from './products/ListView';
 import Sort from './products/Sort';
 import AddToCart from './products/AddToCart';
 import AmountBtn from './products/AmountBtn';
+import Loader from './Loader';
+import ErrorPage from './ErrorPage';
+import CartContent from './cart/CartContent';
+import CartColumns from './cart/CartColumns';
+import CartItem from './cart/CartItem';
+import CartTotal from './cart/CartTotal';
 
 export {
   Navbar,
@@ -28,4 +34,10 @@ export {
   Sort,
   AddToCart,
   AmountBtn,
+  Loader,
+  ErrorPage,
+  CartContent,
+  CartColumns,
+  CartItem,
+  CartTotal,
 };

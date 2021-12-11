@@ -7,6 +7,14 @@ import {
   RiGhost2Line,
 } from '../icons/icons';
 
+const formatPrice = (number) => {
+  const newNumber = new Intl.NumberFormat('ko-KR', {
+    style: 'currency',
+    currency: 'KRW',
+  }).format(number);
+  return newNumber;
+};
+
 const headerList = [
   {
     id: 1,
@@ -22,30 +30,6 @@ const headerList = [
     id: 3,
     title: 'shop',
     path: '/products',
-  },
-];
-
-const featuredList = [
-  {
-    id: 1,
-    url: FEATURED1,
-    path: '/products',
-    name: 'featured1',
-    content: '여행을 떠나고 싶으신가요 ?',
-  },
-  {
-    id: 2,
-    url: FEATURED2,
-    path: '/products',
-    name: 'featured2',
-    content: '미지의 세계를 탐험하고 싶으신가요 ?',
-  },
-  {
-    id: 3,
-    url: FEATURED3,
-    path: '/products',
-    name: 'featured3',
-    content: '못 다 이룬 사랑을 이루고 싶으신가요 ?',
   },
 ];
 
@@ -82,41 +66,9 @@ const dreamList = [
   },
 ];
 
-const productsList = [
-  {
-    id: 1,
-    category: '여행',
-    stock: 3,
-    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
-    img: 'assets/hero5.jpeg',
-  },
-  {
-    id: 2,
-    category: '초현실',
-    stock: 5,
-    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
-    img: 'assets/hero5.jpeg',
-  },
-  {
-    id: 3,
-    category: '그리움',
-    stock: 8,
-    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
-    img: 'assets/hero5.jpeg',
-  },
-  {
-    id: 4,
-    category: '사랑',
-    stock: 10,
-    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
-    img: 'assets/hero5.jpeg',
-  },
-  {
-    id: 5,
-    category: '스릴',
-    stock: 2,
-    text: '바빠서, 할 게 많아서, 성공하기 위해서 잠을 줄이는 요즘, 달러구트라는 책에서은 어제와 오늘 사이의 신비로운 틈새, 기분 좋은상상으로 채워 넣는 작업이라 표현합니다.',
-    img: 'assets/hero5.jpeg',
-  },
-];
-export {headerList, featuredList, dreamList, productsList};
+const categoryType = (data, type) => {
+  let unique = data && data.map((item) => item[type]);
+  unique = ['모든꿈', ...new Set(unique)];
+  return unique;
+};
+export {headerList, dreamList, formatPrice, categoryType};

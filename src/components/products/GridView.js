@@ -6,7 +6,11 @@ function GridView({products}) {
   return (
     <Wrapper>
       <div className="products-container">
-        <Product />
+        {products &&
+          products.map((item) => {
+            const {id} = item;
+            return <Product key={id} {...item} />;
+          })}
       </div>
     </Wrapper>
   );

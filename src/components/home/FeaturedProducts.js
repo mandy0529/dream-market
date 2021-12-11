@@ -1,11 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Product} from '..';
+import {ErrorPage, Loader, Product} from '..';
+import {useProductContext} from '../../context/ProductContext';
 import {BiMoon} from '../../icons/icons';
 import {Wrapper} from '../../styles/home/featured';
-import {featuredList} from '../../utils/helper';
 
 function FeaturedProducts() {
+  const {products, products_error: error} = useProductContext();
+
+  if (error) {
+    console.log(error, 'error2');
+    return <ErrorPage />;
+  }
+
   return (
     <Wrapper className="section">
       <div className="title">
@@ -17,9 +24,12 @@ function FeaturedProducts() {
         </div>
 
         <div className="section-center featured">
-          {featuredList.map((item) => {
-            return <Product key={item.id} {...item} />;
-          })}
+          {products &&
+            products
+              .map((item) => {
+                return <Product key={item.id} {...item} />;
+              })
+              .splice(10, 3)}
         </div>
       </div>
       <Link to="/products" className="btn">

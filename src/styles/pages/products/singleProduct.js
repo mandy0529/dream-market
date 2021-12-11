@@ -2,9 +2,17 @@ import styled from 'styled-components';
 
 const Wrapper = styled.main`
   padding: 5rem 20rem;
+  .title {
+    margin-top: 4rem;
+  }
+  .main {
+    height: 600px;
+    margin-right: 9rem;
+  }
   .product-center {
-    display: grid;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
   }
   .price {
@@ -16,12 +24,15 @@ const Wrapper = styled.main`
   .desc {
     line-height: 2;
     max-width: 45em;
+    font-size: 1.2rem;
   }
   .info {
     text-transform: capitalize;
     width: 300px;
     display: grid;
     grid-template-columns: 125px 1fr;
+    font-weight: bold;
+    font-size: 1.1rem;
     span {
       font-weight: 700;
     }
@@ -34,6 +45,7 @@ const Wrapper = styled.main`
     border: 3px solid var(--main-blue);
     color: black;
     cursor: pointer;
+    letter-spacing: 0.2rem;
     &:hover {
       background: var(--main-blue);
       color: white;
@@ -41,13 +53,20 @@ const Wrapper = styled.main`
       transform: scale(0.98);
     }
   }
-  @media (min-width: 992px) {
-    .product-center {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+
+  @media (max-width: 991px) {
+    padding: 5rem 3rem;
+    .main {
+      height: 300px;
+      margin: 0;
+      margin-bottom: 3rem;
     }
-    .price {
-      font-size: 1.25rem;
+    .product-center {
+      flex-direction: column;
+    }
+
+    .title {
+      margin-top: 2rem;
     }
   }
 `;

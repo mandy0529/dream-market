@@ -55,7 +55,9 @@ exports.handler = async (event, context, cb) => {
 
   // all products api
   try {
-    const {records} = await airtable.list();
+    const {records} = await airtable.list({
+      maxRecords: 50,
+    });
     const product = records.map((item) => {
       const {
         id,

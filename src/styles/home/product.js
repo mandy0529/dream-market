@@ -17,7 +17,7 @@ const Wrapper = styled.article`
   }
 
   .container:hover img {
-    opacity: 0.8;
+    opacity: 0.6;
     transform: scale(0.98);
   }
   .container:hover .link {
@@ -27,13 +27,19 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+    margin-top: 0.6rem;
+
+    span {
+      opacity: 0.6;
+    }
+
     h5 {
-      margin: 0 2rem;
+      margin: 0;
+      margin-right: 2rem;
     }
     p {
       opacity: 0.6;
+      font-size: 1rem;
     }
   }
   @media screen and (max-width: 991px) {

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
   font-size: 1.6rem;
+  margin-left: 3rem;
   button {
     display: block;
     margin: 1.5em 0;
@@ -25,10 +26,11 @@ const Wrapper = styled.section`
     margin-top: 4rem;
   }
 
-  /* .active {
+  .active {
     background: white;
+    border: 3px solid var(--main-blue);
     opacity: 1;
-  } */
+  }
 
   .price {
     margin-bottom: 0.25rem;

@@ -1,39 +1,60 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {AddToCart} from '../components';
+import React, {useEffect} from 'react';
+import {Link, useParams} from 'react-router-dom';
+import {AddToCart, ErrorPage, Loader} from '../components';
+import {useProductContext} from '../context/ProductContext';
 import {Wrapper} from '../styles/pages/products/singleProduct';
-import {HERO_IMG1} from '../utils/images';
+import {SINGLE_API} from '../utils/api';
+import {formatPrice} from '../utils/helper';
 
 function SingleProduct() {
+  const {
+    singleProduct: data,
+    single_loading: loading,
+    single_error: error,
+    fetchSingleProduct,
+  } = useProductContext();
+
+  const {id} = useParams();
+
+  useEffect(() => {
+    fetchSingleProduct(`${SINGLE_API}${id}`);
+    // eslint-disable-next-line
+  }, [id]);
+
+  if (loading) {
+    return <Loader />;
+  }
+  if (error) {
+    return <ErrorPage />;
+  }
+
+  const {category, price, stock, title, image, description} = data;
+  const img = image && image[0].url;
   return (
     <Wrapper>
       <div className="section section-center page">
-        <Link to="/products" className="back-btn">
-          모든 꿈 보기
-        </Link>
-
         <div className="product-center">
-          <img src={HERO_IMG1} alt="minji" />
+          <div className="product-center-left"></div>
+
+          <img className="main" src={img} alt={title} />
           <section className="content">
-            <h2>여행꿈</h2>
-            <h5 className="price">20,000원</h5>
-            <p className="desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              deleniti provident tenetur exercitationem omnis consequuntur
-              veniam a in iusto, nesciunt, perferendis labore unde tempora vel
-              temporibus perspiciatis vero nihil quaerat!
-            </p>
+            <Link to="/products" className="back-btn">
+              모든 꿈 보기
+            </Link>
+            <h2 className="title">{title}</h2>
+            <h4 className="price">{formatPrice(price)}</h4>
+            <p className="desc">{description}</p>
             <p className="info">
-              <span>Available :</span>
-              in stock
+              <span>Stock :</span>
+              {stock}
             </p>
 
             <p className="info">
-              <span>category :</span>
-              travel
+              <span>Category :</span>
+              {category}
             </p>
 
-            <AddToCart />
+            <AddToCart data={data} />
           </section>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Filters, ProductList, Sort} from '../components';
+
 import {Wrapper} from '../styles/pages/products/products';
 
 function Products() {

@@ -2,14 +2,17 @@ import React from 'react';
 import {FaTimes} from 'react-icons/fa';
 import {FiShoppingCart} from 'react-icons/fi';
 import {VscThreeBars} from 'react-icons/vsc';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import {useGlobalContext} from '../context/AppContext';
+import {useCartContext} from '../context/CartContext';
 import {Wrapper} from '../styles/navbar';
 import {headerList} from '../utils/helper';
 import {HEADER} from '../utils/images';
 
 function Navbar() {
   const {showSidebar, hideSidebar, isOpen} = useGlobalContext();
+  const {pathname} = useLocation();
+  const {total_amount} = useCartContext();
 
   return (
     <Wrapper>
@@ -25,7 +28,13 @@ function Navbar() {
           const {id, title, path} = item;
           return (
             <Link to={path} key={id}>
-              <li>{title}</li>
+              <li
+                style={{
+                  background: ` ${path === pathname ? 'white' : 'transparent'}`,
+                }}
+              >
+                {title}
+              </li>
             </Link>
           );
         })}
@@ -34,7 +43,7 @@ function Navbar() {
       <Link to="/cart" className="header__cart">
         <span className="cart-icon">
           <FiShoppingCart />
-          <span className="header__cart-count">1</span>
+          <span className="header__cart-count">{total_amount}</span>
         </span>
       </Link>
 

@@ -38,7 +38,6 @@ const Wrapper = styled.div`
       &:hover {
         border: 3px solid white;
         background: var(--main-white);
-        transform: scale(0.97);
       }
     }
   }

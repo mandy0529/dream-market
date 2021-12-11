@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     padding: 4rem 15rem;
   }
   .products-content {
-    margin-left: 5rem;
+    margin-left: 7rem;
   }
   p {
     margin: 0;
