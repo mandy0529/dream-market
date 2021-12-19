@@ -1,7 +1,6 @@
 import {HIDE_SIDEBAR, SHOW_SIDEBAR} from '../utils/action';
 
 export const initialState = {
-  loading: true,
   isOpen: false,
 };
 

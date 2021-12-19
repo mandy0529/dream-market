@@ -7,12 +7,16 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    h2 {
+      min-width: 230px;
+    }
     p {
       font-size: 1.2rem;
       max-width: 500px;
-      letter-spacing: 0.3rem;
+      min-width: 300px;
+      letter-spacing: 0.2rem;
       line-height: 1.7rem;
-      margin-left: 5rem;
+      margin: 0 5rem;
     }
   }
   .dream__list {

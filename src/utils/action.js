@@ -4,6 +4,8 @@ const HIDE_SIDEBAR = 'hide-sidebar';
 const GRID_VIEW = 'grid-view';
 const LIST_VIEW = 'list-vieew';
 
+const HOME_LOADING = 'home-loading';
+
 // all products
 const PRODUCTS_LOADING = 'products-loading';
 const GET_PRODUCTS = 'get-products';
@@ -50,4 +52,5 @@ export {
   COUNT_CART_TOTAL,
   CLEAR_CART,
   REMOVE_ITEM,
+  HOME_LOADING,
 };

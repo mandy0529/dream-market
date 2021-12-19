@@ -18,12 +18,10 @@ const ProductProvider = ({children}) => {
   const [state, dispatch] = useReducer(ProductReducer, productInitialState);
 
   const gridView = () => {
-    console.log('grid view');
     dispatch({type: GRID_VIEW});
   };
 
   const listView = () => {
-    console.log('list view');
     dispatch({type: LIST_VIEW});
   };
 
