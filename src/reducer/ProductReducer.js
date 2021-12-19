@@ -7,7 +7,6 @@ import {
   LIST_VIEW,
   PRODUCTS_LOADING,
   SINGLE_LOADING,
-  UPDATE_FILTER,
 } from '../utils/action';
 
 export const productInitialState = {

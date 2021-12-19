@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {ErrorPage, Loader, Product} from '..';
+import {ErrorPage, Product} from '..';
 import {useProductContext} from '../../context/ProductContext';
 import {BiMoon} from '../../icons/icons';
 import {Wrapper} from '../../styles/home/featured';

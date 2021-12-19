@@ -1,4 +1,3 @@
-import {AddToCart} from '../components';
 import {
   ADD_TO_CART,
   CLEAR_CART,

@@ -1,4 +1,3 @@
-import {FEATURED1, FEATURED2, FEATURED3} from './images';
 import {
   MdOutlineCardTravel,
   SiSkyliner,

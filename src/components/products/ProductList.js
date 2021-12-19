@@ -1,5 +1,5 @@
 import React from 'react';
-import {GridView, ListView, Loader} from '..';
+import {GridView, ListView} from '..';
 import {useFilterContext} from '../../context/FilterContext';
 import {useProductContext} from '../../context/ProductContext';
 
