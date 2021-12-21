@@ -13,7 +13,7 @@ const Wrapper = styled.section`
   }
   .about2 {
     display: none;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
   }
   article {
@@ -63,6 +63,20 @@ const Wrapper = styled.section`
     }
     article {
       margin: 5rem 2rem 1.5rem 2rem;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 2rem;
+    .about2 {
+      height: 100px;
+    }
+    p {
+      max-width: 700px;
+      font-size: 0.8rem;
+      line-height: 1.9;
+      strong {
+        font-size: 0.8rem;
+      }
     }
   }
 `;

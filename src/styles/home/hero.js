@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     left: 67%;
   }
   .hero__main {
-    margin: 3rem 7rem;
+    margin: 3rem;
   }
   .hero__btn {
     padding: 0.5rem 1.5rem;
@@ -58,12 +58,19 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 991px) {
     flex-direction: column;
-    text-align: center;
     padding-bottom: 6rem;
+    text-align: left;
     h1 {
       margin: 2rem 0;
+      font-size: 2rem;
     }
-
+    p {
+      font-size: 1.1rem;
+    }
+    .hero__img1 {
+      height: 300px;
+      margin: 0 5rem;
+    }
     .hero__img2,
     .hero__img5 {
       display: none;
@@ -73,7 +80,7 @@ const Wrapper = styled.div`
       h1,
       p,
       .hero__btn {
-        min-width: 300px;
+        min-width: 200px;
       }
     }
     .hero__btn {

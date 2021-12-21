@@ -69,6 +69,26 @@ const Wrapper = styled.main`
       margin-top: 2rem;
     }
   }
+  @media (max-width: 768px) {
+    padding: 1rem;
+    .content {
+      text-align: center;
+    }
+    .main {
+      height: 200px;
+    }
+    .desc {
+      font-size: 1rem;
+    }
+    .title {
+      font-size: 1.2rem;
+    }
+    .back-btn {
+      padding: 0.3rem 0.8rem;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+    }
+  }
 `;
 
 export {Wrapper};

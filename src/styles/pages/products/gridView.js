@@ -4,20 +4,16 @@ const Wrapper = styled.section`
   img {
     height: 200px;
   }
-
   .products-container {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem 1.5rem;
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 991px) {
     .products-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1170px) {
-    .products-container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: auto;
+      gap: 2rem 0.3rem;
     }
   }
 `;

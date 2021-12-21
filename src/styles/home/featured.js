@@ -48,7 +48,9 @@ const Wrapper = styled.section`
     }
   }
   @media screen and (max-width: 991px) {
-    padding: 3rem;
+    padding: 2rem;
+    .featured__flex {
+    }
     .featured {
       grid-template-columns: 1fr;
       img {

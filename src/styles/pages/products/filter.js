@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
   font-size: 1.6rem;
   margin-left: 3rem;
+
   button {
     display: block;
     margin: 1.5em 0;
@@ -50,9 +51,8 @@ const Wrapper = styled.section`
     }
   }
   @media (max-width: 991px) {
+    margin-left: 0;
     padding-bottom: 2rem;
-    border-bottom: 2px dotted black;
-    max-width: 500px;
     .category-control {
       display: flex;
     }

@@ -7,9 +7,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    h2 {
-      min-width: 230px;
-    }
+
     p {
       font-size: 1.2rem;
       max-width: 500px;
@@ -30,10 +28,7 @@ const Wrapper = styled.div`
       background: var(--main-light-pink);
       border-radius: 50%;
     }
-    p {
-      max-width: 200px;
-      /* min-width: 200px; */
-    }
+
     .dream__list-menu {
       display: flex;
       flex-direction: column;
@@ -42,11 +37,19 @@ const Wrapper = styled.div`
       padding: 2rem;
       border-radius: 20px;
       background: var(--main-pink);
+      p {
+        max-width: 300px;
+      }
     }
   }
   @media screen and (max-width: 991px) {
     padding: 3rem 0;
     .dream__title {
+      h2 {
+        max-width: 300px;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+      }
       p {
         display: none;
       }

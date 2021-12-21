@@ -68,14 +68,17 @@ const Wrapper = styled.article`
     }
   }
   @media (max-width: 991px) {
-    grid-template-columns: 200px auto auto;
+    grid-template-columns: 200px auto auto auto;
     align-items: center;
     grid-template-rows: 75px;
-    padding: 0 4rem;
-    .subtotal {
-      display: none;
+    padding: 2rem 4rem;
+    img {
+      height: 50px;
     }
-    .price {
+    .title {
+      font-size: 0.75rem;
+    }
+    .subtotal {
       display: none;
     }
 
@@ -93,6 +96,21 @@ const Wrapper = styled.article`
       h2 {
         font-size: 1.5rem;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 100px;
+    padding: 2rem 4rem;
+    gap: 1rem;
+
+    .price {
+      font-size: 0.7rem;
+    }
+    .title {
+      font-size: 0.75rem;
+    }
+    .remove-btn {
+      font-size: 1rem;
     }
   }
 `;

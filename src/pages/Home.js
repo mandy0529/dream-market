@@ -14,8 +14,11 @@ function Home() {
 
 const Wrapper = styled.div`
   padding-top: 8rem;
-  @media screen and (max-width: 991px) {
+  width: 100vw;
+  @media screen and (max-width: 768px) {
     padding-top: 0rem;
+    text-align: center;
+    width: 100vw;
   }
 `;
 export default Home;

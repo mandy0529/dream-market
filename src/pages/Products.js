@@ -6,7 +6,7 @@ import {Wrapper} from '../styles/pages/products/products';
 function Products() {
   return (
     <Wrapper className="page">
-      <div className="section-center products">
+      <div className="products">
         <Filters />
         <div className="products-content">
           <Sort />
