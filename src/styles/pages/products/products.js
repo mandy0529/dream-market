@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     }
     .products-content {
       margin-left: 0;
+      margin: 2rem 1rem;
     }
   }
 

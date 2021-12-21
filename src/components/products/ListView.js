@@ -21,7 +21,7 @@ function ListView({products}) {
                   {category}
                 </span>
                 <h5 className="price">{formatPrice(price)}</h5>
-                <p className="list-p">{description.substring(0, 70)} ... </p>
+                <p className="list-p">{description.substring(0, 50)} ... </p>
                 <Link to={`/products/${id}`} className="detail-btn">
                   details
                 </Link>

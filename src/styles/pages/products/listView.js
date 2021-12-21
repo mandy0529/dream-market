@@ -8,6 +8,7 @@ const Wrapper = styled.section`
   img {
     display: block;
     max-width: 400px;
+    min-width: 400px;
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -32,7 +33,8 @@ const Wrapper = styled.section`
     margin-bottom: 0.75rem;
   }
   .list-p {
-    max-width: 45em;
+    max-width: 45rem;
+    min-width: 30rem;
     margin-bottom: 1.4rem;
   }
   .detail-btn {
@@ -40,7 +42,6 @@ const Wrapper = styled.section`
     padding: 0.3rem 1.3rem;
     background: var(--main-blue);
     border: 3px solid transparent;
-
     border-radius: 10px;
     transition: var(--transition);
 
@@ -59,13 +60,23 @@ const Wrapper = styled.section`
     }
     img {
       display: block;
-      width: 200px;
+      width: 150px;
+      height: 300px;
       object-fit: cover;
       border-radius: var(--radius);
       margin-bottom: 1rem;
     }
     .detail-btn {
       font-size: 0.8rem;
+    }
+    .list-p {
+      max-width: 30rem;
+      min-width: 30rem;
+      margin-bottom: 0.7rem;
+    }
+    .price {
+      margin: 0.5rem 0;
+      margin-bottom: 0.3rem;
     }
   }
 `;

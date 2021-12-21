@@ -53,8 +53,16 @@ const Wrapper = styled.section`
   @media (max-width: 991px) {
     margin-left: 0;
     padding-bottom: 2rem;
+    button {
+      margin: 0.3rem 0;
+      padding: 0.5rem 1.3rem;
+    }
+    .form-control {
+      margin: 0 2rem;
+    }
     .category-control {
       display: flex;
+      flex-wrap: wrap;
     }
     .filter-control-flex {
       display: flex;
@@ -67,6 +75,9 @@ const Wrapper = styled.section`
       margin-top: 3rem;
       padding: 0.3rem 1rem;
       font-size: 0.9rem;
+    }
+    .price {
+      font-size: 0.8rem;
     }
   }
 `;
