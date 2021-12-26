@@ -41,17 +41,21 @@ const Wrapper = styled.div`
     }
   }
   @media screen and (max-width: 991px) {
-    padding: 2rem;
+    padding: 2rem 0;
+
     .link-btn {
       font-size: 0.8rem;
-      padding: 0.2rem 1rem;
+      padding: 0.4rem 1rem;
       margin: 0 1rem;
     }
   }
   @media (max-width: 768px) {
     background: transparent;
     .link-btn {
-      padding: 0.2rem 1rem;
+      font-size: 0.5rem;
+    }
+    .hr {
+      display: none;
     }
   }
 `;

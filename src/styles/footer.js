@@ -20,6 +20,10 @@ const Wrapper = styled.footer`
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    height: 4rem;
+    h5 {
+      font-size: 0.7rem;
+    }
   }
 `;
 export {Wrapper};

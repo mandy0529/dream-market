@@ -13,17 +13,17 @@ function CartContent() {
       {cart.map((item) => {
         return <CartItem key={item.id} {...item} />;
       })}
-      <hr />
+      <hr className="hr" />
       <div className="link-container">
         <Link to="/products" className="link-btn products-btn ">
-          꿈 담으러 가기
+          꿈 담기
         </Link>
         <button
           className="link-btn clear-btn"
           type="button"
           onClick={clearCartItem}
         >
-          꿈 카트 비우기
+          꿈 비우기
         </button>
       </div>
       <CartTotal />

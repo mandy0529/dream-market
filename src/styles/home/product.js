@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.article`
+  padding: 0.7rem;
   .container {
     position: relative;
     background: black;
@@ -27,26 +28,29 @@ const Wrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.6rem;
-
-    span {
-      opacity: 0.6;
-    }
-
+    margin-top: 0.8rem;
     h5 {
       margin: 0;
       margin-right: 2rem;
+      font-size: 1.1rem;
     }
     p {
       opacity: 0.6;
       font-size: 1rem;
+      margin: 0;
     }
   }
   @media screen and (max-width: 991px) {
+    padding: 0.4rem;
     footer {
+      margin-top: 0.8rem;
       h5 {
         margin: 0 1rem;
         margin-right: 2rem;
+        font-size: 0.8rem;
+      }
+      p {
+        font-size: 0.7rem;
       }
     }
   }

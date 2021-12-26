@@ -17,8 +17,12 @@ const Wrapper = styled.section`
 
   @media (max-width: 776px) {
     justify-content: center;
+    article {
+      padding: 1.5rem 0.5rem;
+    }
     h4 {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
+      grid-template-columns: 100px 1fr;
     }
   }
 `;

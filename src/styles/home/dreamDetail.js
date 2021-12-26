@@ -5,23 +5,24 @@ const Wrapper = styled.div`
   background: var(--main-light-pink);
   .dream__title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     p {
-      font-size: 1.2rem;
-      max-width: 500px;
+      font-size: 1.1rem;
+      max-width: 600px;
       min-width: 300px;
-      letter-spacing: 0.2rem;
-      line-height: 1.7rem;
-      margin: 0 5rem;
+      letter-spacing: 0.3rem;
+      line-height: 2rem;
+      margin: 3rem 5rem;
     }
   }
   .dream__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
     span {
       font-size: 2.5rem;
       padding: 0.4rem 1rem;
@@ -46,7 +47,7 @@ const Wrapper = styled.div`
     padding: 3rem 0;
     .dream__title {
       h2 {
-        max-width: 300px;
+        max-width: 250px;
         line-height: 2rem;
         letter-spacing: 0.1rem;
       }
@@ -57,6 +58,20 @@ const Wrapper = styled.div`
     .dream__list {
       flex-direction: column;
       margin: 2rem 0;
+      .dream__list-menu {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        span {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          max-width: 250px;
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 `;

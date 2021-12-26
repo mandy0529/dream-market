@@ -35,6 +35,17 @@ const Wrapper = styled.section`
       transition: var(--transition);
     }
   }
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+    .header__cart {
+      font-size: 1rem;
+      padding: 0.3rem 1rem;
+      margin-top: 1rem;
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `;
 
 export {Wrapper};

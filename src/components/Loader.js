@@ -36,6 +36,13 @@ const Wrapper = styled.section`
       transform: rotate(360deg);
     }
   }
+  @media screen and (max-width: 500px) {
+    margin: 12rem auto;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
 
 export default Loader;

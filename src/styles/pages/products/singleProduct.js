@@ -8,6 +8,7 @@ const Wrapper = styled.main`
   .main {
     height: 600px;
     margin-right: 9rem;
+    border-radius: 10px;
   }
   .product-center {
     display: flex;
@@ -81,12 +82,20 @@ const Wrapper = styled.main`
       font-size: 1rem;
     }
     .title {
-      font-size: 1.2rem;
+      font-size: 1rem;
+      margin-top: 0;
+    }
+    .price {
+      font-size: 0.8rem;
+    }
+    .desc {
+      font-size: 0.7rem;
+    }
+    .info {
+      font-size: 0.9rem;
     }
     .back-btn {
-      padding: 0.3rem 0.8rem;
-      font-size: 1rem;
-      letter-spacing: 0.2rem;
+      display: none;
     }
   }
 `;

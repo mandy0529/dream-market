@@ -24,6 +24,9 @@ const Wrapper = styled.div`
   h2 {
     margin-bottom: 0;
   }
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 `;
 
 export {Wrapper};

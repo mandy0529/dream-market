@@ -68,14 +68,26 @@ const Wrapper = styled.section`
   @media (max-width: 500px) {
     padding: 2rem;
     .about2 {
-      height: 100px;
+      height: 80px;
     }
     p {
       max-width: 700px;
       font-size: 0.8rem;
       line-height: 1.9;
+      margin: 1rem 0;
       strong {
         font-size: 0.8rem;
+      }
+    }
+    article {
+      margin: 2rem 1rem;
+    }
+    .title {
+      span {
+        font-size: 1.4rem;
+      }
+      h1 {
+        font-size: 1.4rem;
       }
     }
   }

@@ -52,13 +52,18 @@ const Wrapper = styled.section`
   }
   @media (max-width: 991px) {
     margin-left: 0;
-    padding-bottom: 2rem;
+    padding: 0 1.5rem 2rem 1.5rem;
+    border-bottom: 2px dotted black;
     button {
       margin: 0.3rem 0;
-      padding: 0.5rem 1.3rem;
+      padding: 0.3rem 1rem;
+      font-size: 0.7rem;
     }
     .form-control {
-      margin: 0 2rem;
+      margin: 0 1rem;
+    }
+    .filter-control {
+      margin-top: 1rem;
     }
     .category-control {
       display: flex;
@@ -72,9 +77,11 @@ const Wrapper = styled.section`
       }
     }
     .clear-btn {
-      margin-top: 3rem;
+      margin: 0 auto;
+      margin-top: 1.5rem;
       padding: 0.3rem 1rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      text-align: center;
     }
     .price {
       font-size: 0.8rem;

@@ -11,7 +11,7 @@ import {
 
 export const productInitialState = {
   isGridView: true,
-  products_loading: false,
+  products_loading: true,
   products_error: false,
   products: [],
   single_loading: false,
@@ -35,6 +35,7 @@ const ProductReducer = (state, action) => {
       return {
         ...state,
         products: action.payload,
+        products_loading: false,
       };
 
     case GET_PRODUCTS_ERROR:

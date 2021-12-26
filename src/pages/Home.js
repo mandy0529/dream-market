@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import {DreamDetail, FeaturedProducts, Hero} from '../components';
+import {DreamDetail, FeaturedProducts, Hero, Loader} from '../components';
+import {useProductContext} from '../context/ProductContext';
 
 function Home() {
+  const {products_loading: loading} = useProductContext();
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <Wrapper>
       <Hero />

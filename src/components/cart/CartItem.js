@@ -13,7 +13,6 @@ function CartItem({id, title, price, img, amount, stock}) {
         <img src={img} alt={title} />
         <h5 className="name">{title}</h5>
       </div>
-
       <h5 className="price">{formatPrice(price)}</h5>
 
       <AmountBtn

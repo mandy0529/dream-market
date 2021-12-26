@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   column-gap: 2rem;
   .sort-p {
     text-transform: capitalize;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 1.1rem;
   }
   .btn-container {
@@ -38,11 +38,20 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: 991px) {
+    column-gap: 1rem;
     .btn-container {
       width: 50px;
+      button {
+        width: 1.3rem;
+        height: 1.3rem;
+        svg {
+          font-size: 1rem;
+        }
+      }
     }
     .sort-p {
       margin: 0 2rem;
+      font-size: 0.8rem;
     }
   }
 `;

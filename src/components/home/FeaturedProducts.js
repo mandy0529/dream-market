@@ -9,7 +9,6 @@ function FeaturedProducts() {
   const {products, products_error: error} = useProductContext();
 
   if (error) {
-    console.log(error, 'error2');
     return <ErrorPage />;
   }
 
@@ -32,6 +31,7 @@ function FeaturedProducts() {
               .splice(10, 3)}
         </div>
       </div>
+
       <Link to="/products" className="btn">
         꿈 찾으러 가기
       </Link>

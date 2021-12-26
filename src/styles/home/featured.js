@@ -50,11 +50,17 @@ const Wrapper = styled.section`
   @media screen and (max-width: 991px) {
     padding: 2rem;
     .featured__flex {
+      h1 {
+        font-size: 1.2rem;
+      }
+      span {
+        font-size: 2rem;
+      }
     }
     .featured {
       grid-template-columns: 1fr;
       img {
-        height: 300px;
+        height: 200px;
       }
     }
     .btn {

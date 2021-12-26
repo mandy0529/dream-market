@@ -24,6 +24,17 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .empty {
+      h2 {
+        font-size: 1rem;
+      }
+      .to-product-btn {
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem;
+      }
+    }
+  }
 `;
 
 export {Wrapper};

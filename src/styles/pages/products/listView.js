@@ -77,6 +77,7 @@ const Wrapper = styled.section`
     .price {
       margin: 0.5rem 0;
       margin-bottom: 0.3rem;
+      font-size: 0.7rem;
     }
   }
   @media screen and (max-width: 500px) {
@@ -86,8 +87,17 @@ const Wrapper = styled.section`
       min-width: 200px;
       max-height: 100px;
       width: 100%;
-      height: 400px;
+      height: 500px;
     }
+    h4 {
+      font-size: 1rem;
+      margin: 0;
+    }
+    h5 {
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+
     article {
       flex-direction: column;
       div {
@@ -95,10 +105,16 @@ const Wrapper = styled.section`
         margin-bottom: 1.5rem;
       }
     }
+    .detail-btn {
+      font-size: 0.8rem;
+
+      padding: 0.2rem 1rem;
+    }
     .list-p {
-      max-width: 15rem;
-      min-width: 15rem;
+      max-width: 10rem;
+      min-width: 10rem;
       margin-bottom: 0.7rem;
+      font-size: 0.7rem;
     }
   }
 `;

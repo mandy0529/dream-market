@@ -24,7 +24,6 @@ const CartProvider = ({children}) => {
   };
 
   const handleCart = (id, stock, type) => {
-    console.log('handle cart!');
     dispatch({type: HANDLE_CART_ITEM_AMOUNT, payload: {id, type, stock}});
   };
 

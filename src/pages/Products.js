@@ -1,9 +1,15 @@
 import React from 'react';
-import {Filters, ProductList, Sort} from '../components';
-
+import {Filters, Loader, ProductList, Sort} from '../components';
+import {useProductContext} from '../context/ProductContext';
 import {Wrapper} from '../styles/pages/products/products';
 
 function Products() {
+  const {products_loading: loading} = useProductContext();
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <Wrapper className="page">
       <div className="products">

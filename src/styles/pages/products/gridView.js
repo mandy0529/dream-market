@@ -11,6 +11,9 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: 991px) {
+    img {
+      height: 150px;
+    }
     .products-container {
       grid-template-columns: auto;
       gap: 2rem 0.3rem;

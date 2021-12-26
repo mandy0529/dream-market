@@ -60,6 +60,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding-bottom: 6rem;
     text-align: left;
+
     h1 {
       margin: 2rem 0;
       font-size: 2rem;
@@ -76,16 +77,26 @@ const Wrapper = styled.div`
       display: none;
     }
     .hero__main {
+      margin: 2rem 3rem;
       margin-bottom: 3rem;
       h1,
       p,
       .hero__btn {
         min-width: 200px;
       }
+      h1 {
+        font-size: 1.7rem;
+        margin: 1rem 0 0.4rem 0;
+      }
+      p {
+        font-size: 0.9rem;
+        margin: 1.5rem 0;
+      }
     }
     .hero__btn {
-      font-size: 1rem;
-      margin: 1rem;
+      font-size: 0.5rem;
+      margin: 1rem 0;
+      padding: 0.3rem 1rem;
     }
   }
 `;

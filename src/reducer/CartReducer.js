@@ -37,9 +37,7 @@ const CartReducer = (state, action) => {
             if (newAmount > Number(item.stock)) {
               newAmount = Number(item.stock);
             }
-            console.log({'item id': item.id, id: id});
-            console.log(newAmount, 'new amount');
-            console.log(amount, 'amount');
+
             return {...item, amount: newAmount};
           } else {
             return item;

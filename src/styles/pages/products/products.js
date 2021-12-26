@@ -14,19 +14,16 @@ const Wrapper = styled.div`
   }
 
   @media screen and (max-width: 991px) {
+    margin: 2rem auto;
     .products {
       grid-template-columns: 1fr;
-      padding: 2rem 0rem;
+      padding: 0;
       gap: 1rem;
     }
     .products-content {
       margin-left: 0;
-      margin: 2rem 1rem;
+      margin: 1rem 2rem;
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    margin: 2rem auto;
   }
 `;
 
