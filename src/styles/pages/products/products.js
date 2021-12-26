@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     margin-left: 7rem;
   }
 
-  @media (max-width: 991px) {
+  @media screen and (max-width: 991px) {
     .products {
       grid-template-columns: 1fr;
       padding: 2rem 0rem;
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     margin: 2rem auto;
   }
 `;

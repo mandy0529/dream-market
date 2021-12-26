@@ -79,6 +79,28 @@ const Wrapper = styled.section`
       margin-bottom: 0.3rem;
     }
   }
+  @media screen and (max-width: 500px) {
+    margin: 2rem;
+    img {
+      max-width: 200px;
+      min-width: 200px;
+      max-height: 100px;
+      width: 100%;
+      height: 400px;
+    }
+    article {
+      flex-direction: column;
+      div {
+        margin: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .list-p {
+      max-width: 15rem;
+      min-width: 15rem;
+      margin-bottom: 0.7rem;
+    }
+  }
 `;
 
 export {Wrapper};
