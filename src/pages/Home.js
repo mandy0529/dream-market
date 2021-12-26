@@ -23,8 +23,7 @@ const Wrapper = styled.div`
   width: 100vw;
   @media screen and (max-width: 768px) {
     padding-top: 0rem;
-    text-align: center;
-    width: 100vw;
+    /* text-align: center; */
   }
 `;
 export default Home;

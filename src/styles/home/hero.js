@@ -60,7 +60,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding-bottom: 6rem;
     text-align: left;
-
+    width: 100vw;
     h1 {
       margin: 2rem 0;
       font-size: 2rem;
@@ -69,8 +69,8 @@ const Wrapper = styled.div`
       font-size: 1.1rem;
     }
     .hero__img1 {
-      height: 300px;
-      margin: 0 5rem;
+      height: 250px;
+      margin: 0 3rem;
     }
     .hero__img2,
     .hero__img5 {
