@@ -33,6 +33,7 @@ const Wrapper = styled.article`
       margin: 0;
       margin-right: 2rem;
       font-size: 1.1rem;
+      min-width: 2rem;
     }
     p {
       opacity: 0.6;

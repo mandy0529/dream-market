@@ -8,9 +8,8 @@ const Wrapper = styled.section`
   img {
     display: block;
     max-width: 400px;
-    min-width: 400px;
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: var(--radius);
     margin-bottom: 1rem;
@@ -21,6 +20,7 @@ const Wrapper = styled.section`
   }
   article {
     display: flex;
+
     div {
       margin: 0 3rem;
       span {
@@ -33,8 +33,8 @@ const Wrapper = styled.section`
     margin-bottom: 0.75rem;
   }
   .list-p {
-    max-width: 45rem;
-    min-width: 30rem;
+    max-width: 30rem;
+    min-width: 5rem;
     margin-bottom: 1.4rem;
   }
   .detail-btn {
