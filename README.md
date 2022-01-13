@@ -33,6 +33,6 @@
 ## 🖼 Screenshots
 <div align="center">
     <img width="350" src="https://user-images.githubusercontent.com/59499779/149331678-638eed43-9ee1-4aa3-864c-77c21534e180.png">    
-    <img width="350" src="https://user-images.githubusercontent.com/59499779/149331685-b0872a51-290a-4eac-9dfd-7625a7565405.png">
+    <img width="250" src="https://user-images.githubusercontent.com/59499779/149331685-b0872a51-290a-4eac-9dfd-7625a7565405.png">
     <img width="350" src="https://user-images.githubusercontent.com/59499779/149331687-44e89244-cdf2-4999-a85d-9b4b04f1bfbb.png">
 </div>
