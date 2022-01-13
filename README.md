@@ -29,3 +29,10 @@
     - 꿈의 카테고리별로 filter 링 된 결과 값을 렌더링하고, 
     - 원하는 제품을 재고 수에 맞게 카트에 담고, 
     - 그 총 가격을 확인 할 수 있는 결제 직전의 e-commerce 기능을 구현 해냅니다.
+
+## 🖼 Screenshots
+<div align="center">
+    <img width="350" src="https://user-images.githubusercontent.com/59499779/149331678-638eed43-9ee1-4aa3-864c-77c21534e180.png">    
+    <img width="350" src="https://user-images.githubusercontent.com/59499779/149331685-b0872a51-290a-4eac-9dfd-7625a7565405.png">
+    <img width="350" src="https://user-images.githubusercontent.com/59499779/149331687-44e89244-cdf2-4999-a85d-9b4b04f1bfbb.png">
+</div>
